@@ -1,0 +1,66 @@
+body{
+  background: rgb(245, 238, 100);/*245, 238, 174*/
+}
+.main{
+  margin: 2em auto;
+  width: 80%;/*80%*/
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+[class^="contenedor"] {
+  width: 30%;/* 30% */
+  min-height: 200px; /* se puede modificar el alto de las imagenes */
+  padding: 0,5vw;/* 0.5vw modificable */
+  border: 1px solid green;/* 1px solid black */
+  margin: 0,4vw; /* 0.4vw  */
+  background: rgb(100, 96, 6);/*164, 96, 6)  */
+}
+
+[class^="cuadrado"] {
+  margin: 0 auto;
+  width: 50%;/* 50% aumenta el tamaño de la imagenes*/
+  padding: 0.5vw;/* 0.5vw; */
+  min-width: 100px;
+  border: 10px solid black;
+  text-align: center;
+  background: rgb(217, 194, 151);
+}
+
+.contenedor1, .cuadrado1{ /* .contenedor1, .cuadrado1{ */
+  box-sizing: box-sizing: border-box;/*box-sizing: border-box;*/
+}
+
+.contenedor2, .cuadrado2{
+  box-sizing: content-box;/*  */
+}
+
+.contenedor3, .cuadrado3{
+  box-sizing: padding-box;
+}
+
+[class^="cuadrado"] img{
+  width: 60%;/*width: 90%;*/
+}
+
+
+/*se utiliza el selector de class para header
+tipo de letra,tamaño de la ventana en porcentaje
+se utilisando background para color de fonto de header
+*/
+header .comenzar{
+  font-family: helvetica;
+  width: 100%;
+  height: 100px;
+  background: rgb(217, 194, 151);/*217, 194, 151*/
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box; /*utilizando este elemento dimenciones de la caja no incluye margin*/
+}
+/*tamaño y color de las letras de H1 declarados con el selector de class*/
+.comenzar h1{
+  margin-top: 0px;
+  font-size: 4em; /*tamaño de las letras de h1 utilisando em*/
+  color: rgb(162, 112, 0);
+}
